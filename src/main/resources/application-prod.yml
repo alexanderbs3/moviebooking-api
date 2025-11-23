@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  jpa:
+    show-sql: false
+
+  flyway:
+    enabled: true
+    clean-disabled: true
+
+logging:
+  level:
+    root: WARN
+    build.moviebooking.moviebooking: INFO

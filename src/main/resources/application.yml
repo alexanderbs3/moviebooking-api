@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: movie-booking-system
+  profiles:
+    active: dev   # altere para prod em produção
+
+server:
+  port: ${SERVER_PORT:8080}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+    expiration: ${JWT_EXPIRATION:86400000}
+  booking:
+    max-seats-per-booking: 10
+    cancellation-hours-before: 2
+
