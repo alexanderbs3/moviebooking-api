@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.angular/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment (never commit secrets)
+src/environments/environment.prod.ts
+
+# OS
+.DS_Store
+Thumbs.db
